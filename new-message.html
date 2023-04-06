@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAA Secret Files</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/gh/jquery/jquery@3.2.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="./paper-effect.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+        @font-face {
+            font-family: KATSUMI;
+            src: url(KATSUMI.ttf);
+        }
+        * {
+            font-family: "Cutive Mono", monospace;
+        }
+        .katsumi {
+            font-family: KATSUMI;
+        }
+    </style>
+</head>
+<body class="bg-neutral-900">
+      <header class="overlay-content">
+        <nav class="mx-auto flex max-w-7xl items-center justify-around p-6 lg:px-8" aria-label="Global">
+          <div class="flex lg:flex-1">
+            <a href="#" class="-m-1.5 p-1.5 text-center text text-sm lg:text-lg text-white">
+              黒白の手紙 | CAA Secret Files
+            </a>
+          </div>
+          <div class="hidden lg:flex lg:gap-x-12">
+            <a href="#" class="text-sm leading-6">Home</a>
+            <a href="#" class="text-sm leading-6">Write a Message</a>
+            <a href="#" class="text-sm leading-6 text-white">Creator</a>
+          </div>
+          <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+            <a href="#" class="text-sm font-semibold leading-6 text-white">Log in <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </nav>
+      </header>
+      <main class="background-container">
+        <div class="container mx-auto items-center text-center overlay-content top-10">
+            <div class="text-center mt-10 p-10">
+                <h1>
+                    <a style="font-weight: lighter;" href="" class="typewrite text-3xl lg:text-5xl" data-period="2000" data-type='["黒白の手紙", "CAA Secret Files", "I love you.", "Why did you leave?", "Balik kana.", "I miss you." ]'>
+                      <span class="wrap"></span>
+                    </a>
+                </h1>
+            </div>
+            <p class="m-5">
+                Please note that <span class="text-red-400">bullying, harassment, or any other form of abusive</span> behavior towards others will not be tolerated on this platform. We take this rule seriously to ensure the safety and well-being of all our users.
+                Thank you for your cooperation in making this a welcoming space for everyone.
+            </p>
+        </div>
+        <div class="mt-10"></div>
+        <div class="container mx-auto">
+            <div class="grid sm:grid-cols-1 lg:grid-cols-2 gap-4 overlay-content top-10">
+                <section class="mast bg-neutral-800">
+                    <div class="container-msg">
+                        <div class="flex">
+                            <h1 class="text">To:</h1>
+                            <input type="text" placeholder="Type name here" class="outline-0 text-white border-0 bg-transparent">
+                        </div>
+                        <hr class="sep"/>
+                        <!-- <p class="text">We've been talking for months. Tell me, what are we?</p> -->
+                        <textarea class="bg-transparent outline-0 resize-none" cols="30" rows="5" placeholder="Write message here" name=""></textarea>
+                        <p class="text text-sm mt-5">- March 1, 2023</p>
+                    </div>
+                    <div class="container mx-auto text-center">
+                        <button class="btn text-gray-100 mb-5">Post Message</button>
+                    </div>
+                </section>
+                <section class="mast bg-transparent">
+                    <div class="">
+                        <div class="grid mt-3 grid-cols-4 lg:grid-cols-2 gap-y-3 gap-x-3 sm:mt-2">
+                           <div class="relative flex">
+                                <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
+                                    <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 w-full bg-red-800"></div>
+                                     <div class="px-0.5">
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="relative flex">
+                                <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
+                                    <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 w-full bg-violet-800"></div>
+                                    <div class="px-0.5">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative flex">
+                                <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
+                                    <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 w-full bg-purple-800"></div>
+                                    <div class="px-0.5">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative flex">
+                                <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
+                                    <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 w-full bg-fuchsia-800"></div>
+                                    <div class="px-0.5">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative flex">
+                                <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
+                                    <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 w-full bg-pink-800"></div>
+                                    <div class="px-0.5">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative flex">
+                                <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
+                                    <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 w-full bg-rose-800"></div>
+                                    <div class="px-0.5">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative flex">
+                                <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
+                                    <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 w-full bg-sky-800"></div>
+                                    <div class="px-0.5">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative flex">
+                                <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
+                                    <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 w-full bg-indigo-800"></div>
+                                    <div class="px-0.5">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative flex">
+                                <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
+                                    <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 w-full bg-yellow-800"></div>
+                                    <div class="px-0.5">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative flex">
+                                <div class="flex items-center gap-x-3 w-full cursor-pointer sm:block sm:space-y-1.5">
+                                    <div class="h-10 w-10 rounded dark:ring-1 dark:ring-inset dark:ring-white/10 w-full bg-orange-800"></div>
+                                    <div class="px-0.5">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                </section>
+            </div>
+            <div class="mt-10 pt-10"></div>
+        </div>
+
+      </main>
+
+
+      
+      <script src="./message-animation.js"></script>
+      <script src="./typewriter-animation.js"></script>
+</body>
+</html>
